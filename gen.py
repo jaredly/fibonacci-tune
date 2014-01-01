@@ -11,13 +11,15 @@ import numpy
 
 import time
 def genlots(upto = 1000000, start = 4):
+    if start < 4:
+        start = 4
     s = time.time()
     result = numpy.zeros(upto - start)
     for i in xrange(start, upto):
         result[i - start] = lenperiod(i)
         if i % 10000 == 0:
             print i, (time.time()-s)/60.0
-    print time.time()-s
+    print time.time()-s, start, upto
     return result
 
 # <codecell>
