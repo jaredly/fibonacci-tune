@@ -1,8 +1,11 @@
 # -*- coding: utf-8 -*-
 # <nbformat>3.0</nbformat>
 
-import pyximport
-pyximport.install()
+try:
+    import pyximport
+    pyximport.install()
+except ImportError:
+    print 'pyximport not here; I hope you compiled gen_c.so by yourself'
 from gen_c import lenperiod
 import numpy
 
