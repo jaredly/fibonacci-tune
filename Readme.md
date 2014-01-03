@@ -1,6 +1,6 @@
 # fibonacci-tune
 
-Playing around with pisano periods.
+Playing around with pisano periods. [Here's an ipython notebook](http://nbviewer.ipython.org/urls/github.com/jaredly/fibonacci-tune/releases/download/0.1/Fibonacci.ipynb) w/ code, results, etc. You probably want to read this page first, though.
 
 ## What is this madness?
 I was actually turned on to this by this [youtube video by numberphile](https://www.youtube.com/watch?v=Nu-lW-Ifyec). But I'll give a brief rundown:
@@ -33,6 +33,9 @@ And it's interesting because the periods don't immediately follow a recognizable
 n: 2, 3, 4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
 p: 3, 8, 6, 20, 24, 16, 12, 24, 60, 10, 24, 28, 48, 40, 24, 36, 24, 18, 60
 ```
+
+Actually the first thing I did was map these sequences to notes on a scale, which was interesting. You can [look at (and listen to) the results here](http://nbviewer.ipython.org/urls/github.com/jaredly/fibonacci-tune/releases/download/0.1/Fibonacci.ipynb#The-sound-of-numbers). But then I wanted to understand the patterns. So I calculated the first million pisano periods.
+
 ## The data
 
 a scatter plot of `(n, period(n))` for `4 <= n <= 1 million`
